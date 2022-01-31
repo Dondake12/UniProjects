@@ -1,0 +1,9 @@
+F:\B\SC2016Assignment\ImageProcessor\ImageProcessor\bin\Debug\ImageProcessor.exe.config
+F:\B\SC2016Assignment\ImageProcessor\ImageProcessor\bin\Debug\ImageProcessor.exe
+F:\B\SC2016Assignment\ImageProcessor\ImageProcessor\bin\Debug\ImageProcessor.pdb
+F:\B\SC2016Assignment\ImageProcessor\ImageProcessor\obj\Debug\ImageProcessor.csprojResolveAssemblyReference.cache
+F:\B\SC2016Assignment\ImageProcessor\ImageProcessor\obj\Debug\ImageProcessor.Form1.resources
+F:\B\SC2016Assignment\ImageProcessor\ImageProcessor\obj\Debug\ImageProcessor.Properties.Resources.resources
+F:\B\SC2016Assignment\ImageProcessor\ImageProcessor\obj\Debug\ImageProcessor.csproj.GenerateResource.Cache
+F:\B\SC2016Assignment\ImageProcessor\ImageProcessor\obj\Debug\ImageProcessor.exe
+F:\B\SC2016Assignment\ImageProcessor\ImageProcessor\obj\Debug\ImageProcessor.pdb
