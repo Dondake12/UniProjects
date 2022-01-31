@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettingsActivity">
+
+    <TextView
+        android:id="@+id/textViewSpeedSettings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/radioGroupSpeed"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="13dp"
+        android:text="Speed Settings"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupSpeed"
+        android:layout_width="162dp"
+        android:layout_height="125dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="47dp"
+        tools:layout_editor_absoluteX="41dp"
+        tools:layout_editor_absoluteY="81dp">
+
+        <RadioButton
+            android:id="@+id/radioButtonDefault"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/radioGroupSpeed"
+            android:layout_alignTop="@+id/radioGroupSpeed"
+            android:layout_weight="1"
+            android:checked="true"
+            android:clickable="true"
+            android:onClick="onRadioButtonClicked"
+            android:saveEnabled="false"
+            android:text="Default"
+            android:visibility="visible" />
+
+        <RadioButton
+            android:id="@+id/radioButtonSlow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:onClick="onRadioButtonClicked"
+            android:saveEnabled="false"
+            android:text="Slow"
+            android:visibility="visible" />
+
+        <RadioButton
+            android:id="@+id/radioButtonFast"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:onClick="onRadioButtonClicked"
+            android:saveEnabled="false"
+            android:text="Fast"
+            android:visibility="visible" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textViewTheme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/radioGroupSpeed"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="182dp"
+        android:text="Themes Setttings"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupColor"
+        android:layout_width="186dp"
+        android:layout_height="94dp"
+        android:layout_below="@+id/textViewTheme"
+        android:layout_alignStart="@+id/radioGroupSpeed"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginBottom="286dp">
+
+        <RadioButton
+            android:id="@+id/radioButtonNormalColor"
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:layout_above="@+id/radioGroupColor"
+            android:layout_alignStart="@+id/radioGroupColor"
+            android:layout_weight="1"
+            android:checked="true"
+            android:clickable="true"
+            android:onClick="changeColor"
+            android:text="Normal Color" />
+
+        <RadioButton
+            android:id="@+id/radioButtonAqua"
+            android:layout_width="match_parent"
+            android:layout_height="16dp"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:onClick="changeColor"
+            android:text="Aqua" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textViewWallSetttings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/radioGroupSpeed"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="351dp"
+        android:text="Wall Settings"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+
+    <Switch
+        android:id="@+id/switchWall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textViewSpeedSettings"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginBottom="172dp"
+        android:checked="false"
+        android:clickable="true"
+        android:onClick="changeWalls"
+        android:text="Do You Want Walls In Game?" />
+
+</RelativeLayout>
