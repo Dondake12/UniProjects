@@ -1,0 +1,22 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.cardreader.MainActivity">
+    <item
+        android:id="@+id/action_GoHome"
+        android:orderInCategory="100"
+        android:title="Home"
+        app:showAsAction="collapseActionView" />
+
+    <item
+        android:id="@+id/action_ListView"
+        android:orderInCategory="100"
+        android:title="Item List"
+        app:showAsAction="collapseActionView" />
+
+    <item
+        android:id="@+id/action_add"
+        android:orderInCategory="100"
+        android:title="Add a Business Card"
+        app:showAsAction="collapseActionView" />
+</menu>

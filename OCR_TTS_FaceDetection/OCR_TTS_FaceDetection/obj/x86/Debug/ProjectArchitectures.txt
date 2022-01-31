@@ -1,0 +1,1 @@
+D:\Projects\OCR_TTS_FaceDetection\OCR_TTS_FaceDetection\OCR_TTS_FaceDetection.csproj;x86

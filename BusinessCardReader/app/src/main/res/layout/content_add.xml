@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="@layout/activity_add">
+
+    <TextView
+        android:id="@+id/textViewDetails"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:text="Tap Capture to turn Camera on or Load Image to upload an existing image on your phone." />
+
+    <ImageView
+        android:id="@+id/imageViewCard"
+        android:layout_width="350dp"
+        android:layout_height="200dp"
+        app:srcCompat="@android:drawable/editbox_background_normal"
+        android:layout_below="@+id/textViewDetails"
+        android:layout_alignStart="@+id/textViewDetails"
+        android:layout_marginTop="144dp" />
+
+    <Button
+        android:id="@+id/buttonCapture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Capture"
+        android:onClick="goToCameraMode"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/imageViewCard"
+        android:layout_toStartOf="@+id/buttonAddtoDatabase" />
+
+    <Button
+        android:id="@+id/buttonLoadImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Load Image"
+        android:onClick="goToLoadImage"
+        android:layout_alignTop="@+id/buttonCapture"
+        android:layout_toEndOf="@+id/buttonAddtoDatabase" />
+
+    <Button
+        android:id="@+id/buttonAddtoDatabase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add"
+        android:onClick="goToEditView"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/buttonLoadImage"
+        android:layout_centerHorizontal="true" />
+
+</android.widget.RelativeLayout>

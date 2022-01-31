@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <TextView
+        android:id="@+id/textViewSelectedItemName"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:text="Selected Item Name"
+        android:textSize="25dp"
+        android:textAlignment="center"
+        tools:layout_editor_absoluteX="30dp"
+        tools:layout_editor_absoluteY="16dp"
+        android:layout_marginTop="27dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/textViewItemName"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="34dp"
+        android:text="Name"
+        android:textSize="20dp"
+        tools:layout_editor_absoluteX="30dp"
+        tools:layout_editor_absoluteY="88dp"
+        android:layout_below="@+id/textViewSelectedItemName"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/textViewItemTitle"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="34dp"
+        android:text="Title"
+        android:textSize="20dp"
+        android:layout_below="@+id/textViewItemName"
+        android:layout_alignStart="@+id/textViewItemName" />
+
+    <TextView
+        android:id="@+id/textViewItemPhone"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:text="Phone"
+        android:textSize="20dp"
+        android:layout_below="@+id/textViewItemTitle"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/textViewItemEmail"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:text="Email"
+        android:textSize="20dp"
+        android:layout_below="@+id/textViewItemPhone"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/buttonEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="120dp"
+        android:onClick="goToEditView"
+        android:text="Edit"
+        tools:layout_editor_absoluteX="161dp"
+        tools:layout_editor_absoluteY="479dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+</android.widget.RelativeLayout>

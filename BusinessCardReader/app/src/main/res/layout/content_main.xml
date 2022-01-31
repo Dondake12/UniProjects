@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.circularreveal.CircularRevealRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+<!--    <fragment-->
+<!--        android:id="@+id/nav_host_fragment"-->
+<!--        android:name="androidx.navigation.fragment.NavHostFragment"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="0dp"-->
+<!--        app:defaultNavHost="true"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintLeft_toLeftOf="parent"-->
+<!--        app:layout_constraintRight_toRightOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:navGraph="@navigation/nav_graph" />-->
+
+    <TextView
+        android:id="@+id/textViewAppTitle"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/imageViewIntroduction"
+        android:layout_marginTop="27dp"
+        android:text="Business Card Reader"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="25dp" />
+
+    <ImageView
+        android:id="@+id/imageViewIntroduction"
+        android:layout_width="350dp"
+        android:layout_height="300dp"
+        android:layout_below="@+id/textViewAppTitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:adjustViewBounds="false"
+        app:srcCompat="@drawable/intro_image" />
+
+    <TextView
+        android:id="@+id/textViewAppDecription"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/imageViewIntroduction"
+        android:layout_below="@+id/imageViewIntroduction"
+        android:layout_marginTop="25dp"
+        android:text="This app captures or loads business card and reads them. Then it will store the information that is important into the app's database. However, this app isn't 100% accurate. So, it would require your assistance you rectify certain information"
+        android:textAppearance="@style/TextAppearance.AppCompat.Menu" />
+
+    <Button
+        android:id="@+id/buttonStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start"
+        android:onClick="goToListView"
+        android:layout_marginBottom="29dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+</android.support.design.circularreveal.CircularRevealRelativeLayout>
